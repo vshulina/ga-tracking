@@ -7,7 +7,7 @@ dataLayer.push({
   gaEventNonInteraction: false,
   subscriptionID:subscriptionID,
   hfWeek: hfWeek,    // week for which meals are being chosen
-  shopCountryCode:,  // two character country code
+  shopCountryCode: shopCountryCode,  // two character country code
   customerID: customerID,
   screenName:'MealSwap'
 });
@@ -21,7 +21,7 @@ dataLayer.push({
   gaEventNonInteraction: false,
   subscriptionID:subscriptionID,
   hfWeek: hfWeek,    // week for which meals are being chosen
-  shopCountryCode:,  // two character country code
+  shopCountryCode: shopCountryCode,  // two character country code
   customerID: customerID,
   screenName:'MealSwap'
 });
