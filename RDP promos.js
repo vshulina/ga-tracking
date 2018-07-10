@@ -29,8 +29,8 @@ dataLayer.push({
 dataLayer.push({
   event: 'gaEventTrigger',
   gaEventCategory: 'Promo Content - RDP',
-  gaEventAction: content type,  // small, medium, or large
-  gaEventLabel: 'Display',
+  gaEventAction: 'Display',
+  gaEventLabel:,
   gaEventNonInteraction: true
 });
 
@@ -38,8 +38,8 @@ dataLayer.push({
 dataLayer.push({
   event: 'gaEventTrigger',
   gaEventCategory: 'Promo Content - RDP',
-  gaEventAction: content type,  // small, medium, or large
-  gaEventLabel: 'Click',
+  gaEventAction: 'Click'
+  gaEventLabel:,
   gaEventNonInteraction: false
 });
 
