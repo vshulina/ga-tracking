@@ -1,31 +1,27 @@
-//Click on ADDON CTA
-//When a customer clicks on the "add it" or "know more" CTA button of a dessert that shows up in a view mode of My Menu
-
+// customers hits 'Add It' button
 dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'addon_CTA_click', 
-  gaEventAction: button clicked,   // 'addit', 'knowmore'
-  gaEventLabel: hfWeek|recipeID,
+  gaEventCategory: 'Easy-Add Card',
+  gaEventAction: 'Add It Click',
+  gaEventLabel: hfWeek|recipeId,  // hellofresh week for which add-on was chosen | add-on recipe id
   gaEventNonInteraction: false,
-  subscriptionID: subscriptionID,
-  hfWeek: hfweek,
-  shopCountryCode:'nl',
+  subscriptionID:subscriptionID,
+  hfWeek: hfWeek,    // week for which meals are being chosen
+  shopCountryCode: shopCountryCode,  // two character country code
   customerID: customerID,
-  screenName:'MyMenu'
+  screenName:'MealSwap'
 });
 
-// ADDON CTA confirmation popup
-// When a customer  clicks on "Not Now" or "Continue" ona  price confirmation popup
-
+// customers hits 'Cancel' or 'Add It' on confirmation popup
 dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'addon_CTA_confirmation'
-  gaEventAction: button clicked, // 'notnow' or 'continue'
-  gaEventLabel: hfWeek|recipeID,
+  gaEventCategory: 'Easy-Add Card',
+  gaEventAction: 'Confirmation - ' + button name,  // button name is either 'Cancel' or 'Add It'
+  gaEventLabel: hfWeek|recipeId,  // hellofresh week for which add-on was chosen | add-on recipe id
   gaEventNonInteraction: false,
-  subscriptionID: subscriptionID,
-  hfWeek: hfweek,
-  shopCountryCode:'nl',
+  subscriptionID:subscriptionID,
+  hfWeek: hfWeek,    // week for which meals are being chosen
+  shopCountryCode: shopCountryCode,  // two character country code
   customerID: customerID,
-  screenName:'MyMenu'
+  screenName:'MealSwap'
 });
