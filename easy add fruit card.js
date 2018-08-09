@@ -1,4 +1,4 @@
-​​​// customers hits 'Add It' button
+// customers hits 'Add It' button
 dataLayer.push({
   event: 'gaEventTrigger',
   gaEventCategory: 'Easy-Add Card',

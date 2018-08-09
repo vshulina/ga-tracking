@@ -3,7 +3,7 @@
 
 ​​​dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'addon_CTA_clik', 
+  gaEventCategory: 'addon_CTA_click', 
   gaEventAction: button clicked,   // 'addit', 'knowmore'
   gaEventLabel: hfWeek|recipeID,
   gaEventNonInteraction: false,
