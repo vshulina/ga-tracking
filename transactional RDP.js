@@ -1,7 +1,7 @@
 // slider
 dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'Transactional DRP',
+  gaEventCategory: 'Recipe Preview',
   gaEventAction: 'Slider Click - ' && [slider page],  // slider page refers to the page of the slide. The first time a customer clicks on the slider, the page should be 2; next time they click on it, it should be 3, and so on. Once a customer reaches the final page, it should be 'end'
   gaEventLabel: HF Week|recipe id, 
   gaEventNonInteraction: false
@@ -10,7 +10,7 @@ dataLayer.push({
 // customer clicks on recipe card for more info
 dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'Transactional DRP',
+  gaEventCategory: 'Recipe Preview',
   gaEventAction: 'Recipe Click - ' && [menu mode], // refers to 'View Mode' or 'Edit Mode'  
   gaEventLabel: HF Week|recipe id, 
   gaEventNonInteraction: false
@@ -19,7 +19,7 @@ dataLayer.push({
 // transactional RDP is displayed
 dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'Transactional DRP',
+  gaEventCategory: 'Recipe Preview',
   gaEventAction: 'Recipe Detail Displayed', 
   gaEventLabel: HF Week|recipe id, 
   gaEventNonInteraction: true
@@ -29,7 +29,7 @@ dataLayer.push({
 // customer clicks on recipe detail popup (either to select the meal, or to view the full recipe)
 dataLayer.push({
   event: 'gaEventTrigger',
-  gaEventCategory: 'Transactional DRP',
+  gaEventCategory: 'Recipe Preview',
   gaEventAction: 'RDP Click - ' && [button clicked], // button clicked refers to 'Select This Meal' or 'See Full Recipe'
   gaEventLabel: HF Week|recipe id, 
   gaEventNonInteraction: false
