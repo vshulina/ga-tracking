@@ -62,15 +62,6 @@ dataLayer.push({
   gaEventNonInteraction: false
 });
 
-// customer clicks on 'i' button to quick view a recipe
-dataLayer.push({
-  event: 'gaEventTrigger',
-  gaEventCategory: 'Single Menu Screen',
-  gaEventAction: 'Quick View',
-  gaEventLabel: HF Week|recipe name|recipe id,  // recipe name and ID for the recipe that was quick-viewed
-  gaEventNonInteraction: false
-});
-
 // APP
 // menu impression - customer is viewing the menu for a given week
 dataLayer.push({
@@ -128,12 +119,26 @@ dataLayer.push({
   screenName:'Single Menu'
 });
 
-// customer selects the bar on the bottom (Select X more green bar at the bottom)
+// customer selects the bar on the bottom (to view recipes they already selected)
 dataLayer.push({
   event: 'gaEventTrigger',
   gaEventCategory: 'Single Menu Screen',
-  gaEventAction: 'Select X More',
-  gaEventLabel: HF Week|recipe id|recipe id|recipe id,  // recipe id's of meals selected so far
+  gaEventAction: 'Bottom Drawer Click',
+  gaEventLabel: HF Week,  // recipe id's of meals selected so far
+  gaEventNonInteraction: false,
+  subscriptionID: subscriptionID,
+  hfWeek: hfweek,
+  shopCountryCode:'us',
+  customerID: customerID,
+  screenName:'Single Menu'
+});
+
+// customer clicks on a recipe in the bottom bar
+dataLayer.push({
+  event: 'gaEventTrigger',
+  gaEventCategory: 'Single Menu Screen',
+  gaEventAction: 'Bottom Drawer Recipe Click',
+  gaEventLabel: HF Week|recipe slot|recipe id,  // recipe slot refers to the slot in the drawer - number should be between 1 and 3; recipe id of meal customer clicked on within the drawer
   gaEventNonInteraction: false,
   subscriptionID: subscriptionID,
   hfWeek: hfweek,
