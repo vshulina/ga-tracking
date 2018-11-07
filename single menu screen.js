@@ -183,3 +183,27 @@ dataLayer.push({
   customerID: customerID,
   screenName:'Single Menu'
 });
+
+// allocation event
+// web
+dataLayer.push({
+  event: 'gaEventTrigger',
+  gaEventCategory: 'Optimizely',
+  gaEventAction: 'single-menu-screen',
+  gaEventLabel: [variant name],  // variant name as appears in Optimizely. ex: 'Variant 1'
+  gaEventNonInteraction: true
+});
+
+// app
+dataLayer.push({
+  event: 'gaEventTrigger',
+  gaEventCategory: 'Optimizely',
+  gaEventAction: 'single-menu-screen',
+  gaEventLabel: [variant name],  // variant name as appears in Optimizely. ex: 'Variant 1'
+  gaEventNonInteraction: true,
+  subscriptionID: subscriptionID,
+  hfWeek: hfweek,
+  shopCountryCode:'us',
+  customerID: customerID,
+  screenName:'Single Menu'
+});
