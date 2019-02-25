@@ -40,20 +40,6 @@ dataLayer.push({
   screenName:'Subscription'
 });
 
-// customer clicks on a recipe plus button to select it
-dataLayer.push({
-  event: 'gaEventTrigger',
-  gaEventCategory: 'Single Screen Addons', 
-  gaEventAction: 'Addon Added',
-  gaEventLabel: addon name|addon sku,   // ex: 'Tiramisu|NL-ADB-A0B4-2-0'
-  gaEventNonInteraction: false,
-  subscriptionID: subscriptionID,
-  hfWeek: hfweek,
-  shopCountryCode:'nl',
-  customerID: customerID,
-  screenName:'Subscription'
-});
-
 // customer clicks on a recipe minus button to de-select it
 dataLayer.push({
   event: 'gaEventTrigger',
